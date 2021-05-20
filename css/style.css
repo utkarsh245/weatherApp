@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+    margin: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    /*background-image: url('../img/clouds.jpg');
+    background-size: cover;*/
+    background: linear-gradient(-45deg, #75cfd1, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 500% 500%;
+    animation: gradient 50s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header-top{
+  border-radius: 18px;
+  border: 2px;
+  padding: 2px 22px;
+  color: white;
+  background: linear-gradient(#ee7752, #e73c7e, #23a6d5);
+
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 22px 18px 25px;
+    border-radius: 28px;
+    height: 100%
+    width: 100%;
+    max-width: 420px;
+    max-height: 420px;
+    margin: 2em;
+}
+
+.search-bar{
+    border: 2px solid white;
+    border-radius: 11px;
+    padding: 4px 12px;
+    font-size: 17px;
+    outline: none;
+    width: 270px;
+    diplay: flex;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .btn{
+    border: 2px solid #f2a83f;
+    border-radius: 7px;
+    padding: 3px 5px 0px;
+    margin-left: 17px;
+    width: 72px;
+    height: 31px;
+    outline: none;
+    cursor:pointer;
+    background: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+
+  .btn:hover{
+
+  background-color:#f2a83f;
+}
+
+  .city{
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .temp{
+    font-size: 26px;
+    color: white;
+  }
+
+  .description{
+    font-size: 21px;
+    text-decoration: overline;
+    padding: 14px 0;
+}
+  .weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+
+  .weather.loading:after{
+    visibility: visible;
+    color: white;
+  }
+
+  .sunrise{
+    color: #f2e03f;
+    margin-top: 20px;
+  }
+
+  .sunset{
+    color: #f2813f;
+  }
+
+  .flex{
+    display: flex;
+    align-items: center;
+  }
+
+  .icon{
+    width: 62px;
+    height: 65px;
+  }
